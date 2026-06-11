@@ -71,6 +71,26 @@ DEMO_COMPANIES = {
 }
 
 
+# --- Demo suite handoffs: issues that the companion demos take from screening to delivery ---
+DEMO_SUITE_HANDOFFS = {
+    "pillar_two": (
+        "**Suite handoff →** When Pillar Two screens material, the next step is the "
+        "**Pillar Two Data-Gap Copilot** (companion demo): source-data readiness, gap register, "
+        "safe-harbour triage, and a GIR readiness memo."
+    ),
+    "camt": (
+        "**Suite handoff →** When CAMT screens material, the next step is the "
+        "**Tax Regulation Change Impact Agent** (companion demo): models the IRS notice against "
+        "the company's profile and drafts an impact memo and action list."
+    ),
+}
+
+HANDOFF_NEXT_STEPS = {
+    "pillar_two": "Pillar Two screens material — propose a GIR data-readiness assessment (Pillar Two Data-Gap Copilot).",
+    "camt": "CAMT screens material — propose a regulation-change impact analysis of the current IRS notice (Tax Regulation Change Impact Agent).",
+}
+
+
 def is_demo_profile(profile: dict) -> bool:
     return str(profile.get("cik", "")).lower() == "demo" or str(profile.get("data_source", "")).startswith("Demo data")
 
@@ -186,6 +206,13 @@ def build_meeting_brief_markdown(profile: dict, scored: list[dict], recommendati
             f"   - Signals: {'; '.join(issue.get('matched_signals', []))}",
             f"   - Assumptions & missing data: {issue.get('assumptions_missing_data', 'Requires professional review.')}",
         ]
+    next_steps = [
+        f"- {HANDOFF_NEXT_STEPS[issue['id']]}"
+        for issue in top_issues
+        if issue.get("id") in HANDOFF_NEXT_STEPS and issue.get("score", 0) >= 30
+    ]
+    if next_steps:
+        lines += ["", "## Recommended engagement next steps", *next_steps]
     lines += [
         "",
         "## 3 key numbers to cite",
@@ -213,6 +240,21 @@ st.caption(
     "Analyzes SEC EDGAR 10-K financial statements and ranks 2026 tax issues by materiality. "
     "Output is analytical intelligence — not tax advice."
 )
+
+with st.sidebar:
+    st.markdown("### Demo suite: ticker → delivered engagement")
+    st.markdown(
+        "1. **Find** — this screener ranks which 2026 tax issues are material "
+        "for a target company, from public SEC filings.\n"
+        "2. **Quantify** — the *Tax Regulation Change Impact Agent* models a specific "
+        "rule change (e.g. the CAMT notice) against the client's profile.\n"
+        "3. **Deliver** — the *Pillar Two Data-Gap Copilot* turns the engagement into "
+        "execution: data readiness, gaps, safe harbours, filing memo.\n"
+    )
+    st.caption(
+        "Same design rule across all three: deterministic rules decide, "
+        "AI drafts narrative, professionals review and sign off."
+    )
 
 st.markdown("---")
 
@@ -296,6 +338,8 @@ if run_btn and ticker_input:
             for sig in issue.get("matched_signals", []):
                 st.write(f"  - {sig}")
             st.write(f"**Assumptions & missing data:** {issue.get('assumptions_missing_data', 'Requires company-specific professional review.')}")
+            if issue.get("id") in DEMO_SUITE_HANDOFFS and score >= 30:
+                st.info(DEMO_SUITE_HANDOFFS[issue["id"]])
 
     st.markdown("---")
     st.subheader("Tax Advisory Brief")

@@ -80,7 +80,26 @@ This demo shows Richie understands the workflow well enough to build it. The con
 - Do not demo on a company with a bad EDGAR data year — use demo companies if needed.
 - Do not linger on the EDGAR fetch — it can be slow. Have DEMO-PHARMA or DEMO-MFG ready.
 
-## Related Demo Repos
+## Where This Fits: The Three-Demo Arc
 
-- `tax-impact` — Tax Regulation Change Impact Agent (primary demo; IRS Notice + synthetic company)
-- `tax-provision-agent` — Automated Tax Provision Reconciliation Agent (provision close demo)
+The three demos follow one client's journey through the tax engagement lifecycle:
+
+1. **Find (this app).** A partner screens a target company from public SEC data and walks into the first
+   meeting knowing which 2026 issues are material. Pillar Two and CAMT are two of the twelve issues scored.
+2. **Quantify (`tax-impact`).** The screener flagged CAMT — the Tax Regulation Change Impact Agent models the
+   IRS notice against the client's profile and produces an impact matrix, draft memo, and action list.
+3. **Deliver (`beps-pillar-two-data-gap-copilot`).** The screener flagged Pillar Two — the Data-Gap Copilot
+   takes the signed engagement into execution: source-data intake, gap register, safe-harbour triage,
+   and a gated GIR readiness memo.
+
+The connective line to say out loud:
+
+> "Act 1 finds the opportunity from public data. Act 2 quantifies it against the client's numbers.
+> Act 3 delivers it with audit-ready controls. Same design rule throughout: deterministic rules decide,
+> AI drafts the narrative, professionals review and sign off."
+
+When Pillar Two or CAMT lands in the top issues during this demo, the app shows the suite handoff inline —
+use that moment to bridge to the next demo.
+
+A related fourth prototype, `tax-provision-agent`, applies the same controlled-AI pattern to recurring
+provision close work (the recurring-revenue side of the same story).

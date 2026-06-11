@@ -49,7 +49,16 @@ No API keys required — all data comes from the public SEC EDGAR API.
 
 `DEMO-PHARMA` and `DEMO-MFG` are synthetic company profiles built into the app for use when EDGAR is slow or offline. Demo mode is clearly labeled in the output.
 
-## Related Projects
+## The Demo Suite: Ticker → Delivered Engagement
 
-- `tax-impact` — Tax Regulation Change Impact Agent (primary tax advisory demo)
-- `tax-provision-agent` — Automated Tax Provision Reconciliation Agent
+This screener is Act 1 of a three-part demo suite that follows the tax client lifecycle:
+
+| Act | App | Question it answers |
+| --- | --- | --- |
+| 1. **Find** | `big4-sec-screener` (this app) | Which tax issues are material for this company, from public data? |
+| 2. **Quantify** | `tax-impact` — Tax Regulation Change Impact Agent | What does a specific rule change (e.g. the CAMT notice) do to this client's numbers? |
+| 3. **Deliver** | `beps-pillar-two-data-gap-copilot` | Is the client's data ready to comply and file — and if not, exactly what's missing? |
+
+Two of the twelve issues this screener scores — Pillar Two and CAMT — hand off directly to Acts 2 and 3. A related fourth prototype, `tax-provision-agent`, shows the same controlled-AI pattern applied to recurring provision close work.
+
+All apps share one design rule: **deterministic rules decide, AI drafts narrative, professionals review and sign off.**
