@@ -1,0 +1,183 @@
+# Big 4 Tax Screener — Batch Results
+Tickers: MSFT, AMZN, PFE, CAT, GE, JPM, WMT, XOM, BA, MCD
+
+
+## MSFT — Microsoft Corporation
+   Revenue: $281.72B  |  Net Income: $101.83B
+   R&D: $32.49B  |  CapEx: $64.55B  |  Interest: $2.38B
+   Assets: $619.00B  |  Debt: $43.15B  |  EBITDA: $160.16B
+   ETR: 17.6%  |  Foreign Income: $54.41B  |  UTP: $24.73B
+   Source: Yahoo Finance (yfinance) FY2025 + SEC EDGAR supplemental (CIK 0000789019)
+
+   TOP TAX ISSUES:
+   1. [ 90/100] OBBBA R&E Expensing — Section 174
+      Signals: R&D >$32.5B; Foreign income (foreign R&E 15-yr amortization still applies)
+      Talking point: Your R&D spend creates an immediate cash tax recovery opportunity from the 2025 retroactive fix. That analysis needs to happen now, before the filing window closes.
+   2. [ 85/100] IRS Enforcement — Audit Rate Surge
+      Signals: Total assets >$619B (prime IRS large business target); Unrecognized tax benefits (UTP) >$24729M
+      Talking point: The IRS is tripling audit rates for companies your size. A pre-audit risk review now costs a fraction of what an exam defense costs later.
+   3. [ 80/100] Pillar Two / GloBE Global Minimum Tax
+      Signals: Foreign income >$54.4B (above GloBE threshold)
+      Talking point: The GIR filing deadline is June 30 and the data requirements are substantial. Companies that haven't started building their GloBE information systems are already behind.
+
+## AMZN — Amazon.com, Inc.
+   Revenue: $716.92B  |  Net Income: $77.67B
+   R&D: N/A  |  CapEx: $131.82B  |  Interest: $2.27B
+   Assets: $818.04B  |  Debt: $65.65B  |  EBITDA: $165.34B
+   ETR: N/A  |  Foreign Income: $7.77B  |  UTP: $6.57B
+   Source: Yahoo Finance (yfinance) FY2025 + SEC EDGAR supplemental (CIK 0001018724)
+
+   TOP TAX ISSUES:
+   1. [ 85/100] IRS Enforcement — Audit Rate Surge
+      Signals: Total assets >$818B (prime IRS large business target); Unrecognized tax benefits (UTP) >$6566M
+      Talking point: The IRS is tripling audit rates for companies your size. A pre-audit risk review now costs a fraction of what an exam defense costs later.
+   2. [ 80/100] Pillar Two / GloBE Global Minimum Tax
+      Signals: Foreign income >$7.8B (above GloBE threshold)
+      Talking point: The GIR filing deadline is June 30 and the data requirements are substantial. Companies that haven't started building their GloBE information systems are already behind.
+   3. [ 80/100] Corporate Alternative Minimum Tax (CAMT)
+      Signals: Net income >$77.7B — clearly in CAMT territory
+      Talking point: If your book income exceeds $1B, you're potentially in CAMT territory. The final rules still aren't out, and companies that wait for clarity are going to have a harder time course-correcting.
+
+## PFE — Pfizer Inc.
+   Revenue: $62.58B  |  Net Income: $7.77B
+   R&D: $12.05B  |  CapEx: $2.63B  |  Interest: $2.67B
+   Assets: $208.16B  |  Debt: $63.96B  |  EBITDA: $16.78B
+   ETR: -3.5%  |  Foreign Income: $6.74B  |  UTP: $4.75B
+   Source: Yahoo Finance (yfinance) FY2025 + SEC EDGAR supplemental (CIK 0000078003)
+
+   TOP TAX ISSUES:
+   1. [100/100] Pillar Two / GloBE Global Minimum Tax
+      Signals: Foreign income >$6.7B (above GloBE threshold); Effective tax rate -3.5% — below 15% GloBE minimum
+      Talking point: The GIR filing deadline is June 30 and the data requirements are substantial. Companies that haven't started building their GloBE information systems are already behind.
+   2. [100/100] Corporate Alternative Minimum Tax (CAMT)
+      Signals: Net income >$7.8B — clearly in CAMT territory; Low ETR -3.5% with high book income — CAMT gap risk
+      Talking point: If your book income exceeds $1B, you're potentially in CAMT territory. The final rules still aren't out, and companies that wait for clarity are going to have a harder time course-correcting.
+   3. [ 90/100] OBBBA R&E Expensing — Section 174
+      Signals: R&D >$12.1B; Foreign income (foreign R&E 15-yr amortization still applies)
+      Talking point: Your R&D spend creates an immediate cash tax recovery opportunity from the 2025 retroactive fix. That analysis needs to happen now, before the filing window closes.
+
+## CAT — Caterpillar Inc.
+   Revenue: $67.59B  |  Net Income: $8.88B
+   R&D: $2.15B  |  CapEx: $4.29B  |  Interest: $502.0M
+   Assets: $98.58B  |  Debt: $43.32B  |  EBITDA: $14.30B
+   ETR: 23.8%  |  Foreign Income: $6.13B  |  UTP: $1.35B
+   Source: Yahoo Finance (yfinance) FY2025 + SEC EDGAR supplemental (CIK 0000018230)
+
+   TOP TAX ISSUES:
+   1. [ 90/100] OBBBA R&E Expensing — Section 174
+      Signals: R&D >$2.1B; Foreign income (foreign R&E 15-yr amortization still applies)
+      Talking point: Your R&D spend creates an immediate cash tax recovery opportunity from the 2025 retroactive fix. That analysis needs to happen now, before the filing window closes.
+   2. [ 85/100] IRS Enforcement — Audit Rate Surge
+      Signals: Total assets >$99B (prime IRS large business target); Unrecognized tax benefits (UTP) >$1347M
+      Talking point: The IRS is tripling audit rates for companies your size. A pre-audit risk review now costs a fraction of what an exam defense costs later.
+   3. [ 85/100] Transfer Pricing + Tariff Convergence
+      Signals: Foreign income >$6134M; COGS ratio 68% — import-heavy operations likely; High COGS + foreign income → likely intercompany transactions
+      Talking point: The tariff environment just made your transfer pricing documentation twice as important — and twice as conflicted. Tax authorities want high intercompany prices; customs wants low ones. Your policy needs to be defensible to both simultaneously.
+
+## GE — GE Aerospace
+   Revenue: $45.85B  |  Net Income: $8.70B
+   R&D: $1.58B  |  CapEx: $1.27B  |  Interest: $843.0M
+   Assets: $130.17B  |  Debt: $20.50B  |  EBITDA: $12.06B
+   ETR: 13.9%  |  Foreign Income: $3.34B  |  UTP: $3.06B
+   Source: Yahoo Finance (yfinance) FY2025 + SEC EDGAR supplemental (CIK 0000040545)
+
+   TOP TAX ISSUES:
+   1. [100/100] Pillar Two / GloBE Global Minimum Tax
+      Signals: Foreign income >$3.3B (above GloBE threshold); Effective tax rate 13.9% — below 15% GloBE minimum
+      Talking point: The GIR filing deadline is June 30 and the data requirements are substantial. Companies that haven't started building their GloBE information systems are already behind.
+   2. [ 90/100] OBBBA R&E Expensing — Section 174
+      Signals: R&D >$1.6B; Foreign income (foreign R&E 15-yr amortization still applies)
+      Talking point: Your R&D spend creates an immediate cash tax recovery opportunity from the 2025 retroactive fix. That analysis needs to happen now, before the filing window closes.
+   3. [ 85/100] IRS Enforcement — Audit Rate Surge
+      Signals: Total assets >$130B (prime IRS large business target); Unrecognized tax benefits (UTP) >$3056M
+      Talking point: The IRS is tripling audit rates for companies your size. A pre-audit risk review now costs a fraction of what an exam defense costs later.
+
+## JPM — JPMorgan Chase & Co.
+   Revenue: $181.85B  |  Net Income: $57.05B
+   R&D: N/A  |  CapEx: N/A  |  Interest: $97.90B
+   Assets: $4424.90B  |  Debt: $499.98B  |  EBITDA: $179.31B
+   ETR: 21.4%  |  Foreign Income: $16.41B  |  UTP: $5.62B
+   Source: Yahoo Finance (yfinance) FY2025 + SEC EDGAR supplemental (CIK 0000019617)
+
+   TOP TAX ISSUES:
+   1. [ 95/100] OBBBA 163(j) — EBITDA Business Interest
+      Signals: Interest expense >$97898M; Interest/EBITDA ratio 55% — high leverage; Long-term debt >$500.0B
+      Talking point: The EBITDA restoration could unlock significant previously disallowed interest deductions, especially if you've been building up a Section 163(j) carryforward.
+   2. [ 85/100] IRS Enforcement — Audit Rate Surge
+      Signals: Total assets >$4425B (prime IRS large business target); Unrecognized tax benefits (UTP) >$5624M
+      Talking point: The IRS is tripling audit rates for companies your size. A pre-audit risk review now costs a fraction of what an exam defense costs later.
+   3. [ 80/100] Pillar Two / GloBE Global Minimum Tax
+      Signals: Foreign income >$16.4B (above GloBE threshold)
+      Talking point: The GIR filing deadline is June 30 and the data requirements are substantial. Companies that haven't started building their GloBE information systems are already behind.
+
+## WMT — Walmart Inc.
+   Revenue: $713.16B  |  Net Income: $21.89B
+   R&D: N/A  |  CapEx: $26.64B  |  Interest: $2.80B
+   Assets: $284.67B  |  Debt: $44.76B  |  EBITDA: $46.47B
+   ETR: 24.7%  |  Foreign Income: $6.20B  |  UTP: $2.44B
+   Source: Yahoo Finance (yfinance) FY2026 + SEC EDGAR supplemental (CIK 0000104169)
+
+   TOP TAX ISSUES:
+   1. [ 85/100] IRS Enforcement — Audit Rate Surge
+      Signals: Total assets >$285B (prime IRS large business target); Unrecognized tax benefits (UTP) >$2440M
+      Talking point: The IRS is tripling audit rates for companies your size. A pre-audit risk review now costs a fraction of what an exam defense costs later.
+   2. [ 85/100] Transfer Pricing + Tariff Convergence
+      Signals: Foreign income >$6197M; COGS ratio 75% — import-heavy operations likely; High COGS + foreign income → likely intercompany transactions
+      Talking point: The tariff environment just made your transfer pricing documentation twice as important — and twice as conflicted. Tax authorities want high intercompany prices; customs wants low ones. Your policy needs to be defensible to both simultaneously.
+   3. [ 80/100] Pillar Two / GloBE Global Minimum Tax
+      Signals: Foreign income >$6.2B (above GloBE threshold)
+      Talking point: The GIR filing deadline is June 30 and the data requirements are substantial. Companies that haven't started building their GloBE information systems are already behind.
+
+## XOM — Exxon Mobil Corporation
+   Revenue: $323.90B  |  Net Income: $28.84B
+   R&D: N/A  |  CapEx: $28.36B  |  Interest: $603.0M
+   Assets: $448.98B  |  Debt: $37.22B  |  EBITDA: $67.86B
+   ETR: 28.5%  |  Foreign Income: $30.27B  |  UTP: $4.13B
+   Source: Yahoo Finance (yfinance) FY2025 + SEC EDGAR supplemental (CIK 0000034088)
+
+   TOP TAX ISSUES:
+   1. [ 85/100] IRS Enforcement — Audit Rate Surge
+      Signals: Total assets >$449B (prime IRS large business target); Unrecognized tax benefits (UTP) >$4131M
+      Talking point: The IRS is tripling audit rates for companies your size. A pre-audit risk review now costs a fraction of what an exam defense costs later.
+   2. [ 85/100] Transfer Pricing + Tariff Convergence
+      Signals: Foreign income >$30268M; COGS ratio 78% — import-heavy operations likely; High COGS + foreign income → likely intercompany transactions
+      Talking point: The tariff environment just made your transfer pricing documentation twice as important — and twice as conflicted. Tax authorities want high intercompany prices; customs wants low ones. Your policy needs to be defensible to both simultaneously.
+   3. [ 80/100] Pillar Two / GloBE Global Minimum Tax
+      Signals: Foreign income >$30.3B (above GloBE threshold)
+      Talking point: The GIR filing deadline is June 30 and the data requirements are substantial. Companies that haven't started building their GloBE information systems are already behind.
+
+## BA — The Boeing Company
+   Revenue: $89.46B  |  Net Income: $2.23B
+   R&D: $3.62B  |  CapEx: $2.95B  |  Interest: $2.77B
+   Assets: $168.24B  |  Debt: $53.85B  |  EBITDA: $7.36B
+   ETR: 15.1%  |  Foreign Income: $6.13B  |  UTP: $1.02B
+   Source: Yahoo Finance (yfinance) FY2025 + SEC EDGAR supplemental (CIK 0000012927)
+
+   TOP TAX ISSUES:
+   1. [ 95/100] OBBBA 163(j) — EBITDA Business Interest
+      Signals: Interest expense >$2771M; Interest/EBITDA ratio 38% — high leverage; Long-term debt >$53.8B
+      Talking point: The EBITDA restoration could unlock significant previously disallowed interest deductions, especially if you've been building up a Section 163(j) carryforward.
+   2. [ 90/100] OBBBA R&E Expensing — Section 174
+      Signals: R&D >$3.6B; Foreign income (foreign R&E 15-yr amortization still applies)
+      Talking point: Your R&D spend creates an immediate cash tax recovery opportunity from the 2025 retroactive fix. That analysis needs to happen now, before the filing window closes.
+   3. [ 85/100] IRS Enforcement — Audit Rate Surge
+      Signals: Total assets >$168B (prime IRS large business target); Unrecognized tax benefits (UTP) >$1021M
+      Talking point: The IRS is tripling audit rates for companies your size. A pre-audit risk review now costs a fraction of what an exam defense costs later.
+
+## MCD — McDonald's Corporation
+   Revenue: $26.89B  |  Net Income: $8.56B
+   R&D: N/A  |  CapEx: $3.37B  |  Interest: $1.58B
+   Assets: $59.52B  |  Debt: $39.97B  |  EBITDA: $14.68B
+   ETR: 21.4%  |  Foreign Income: $7.61B  |  UTP: $414.0M
+   Source: Yahoo Finance (yfinance) FY2025 + SEC EDGAR supplemental (CIK 0000063908)
+
+   TOP TAX ISSUES:
+   1. [ 85/100] IRS Enforcement — Audit Rate Surge
+      Signals: Total assets >$60B (prime IRS large business target); Unrecognized tax benefits (UTP) >$414M
+      Talking point: The IRS is tripling audit rates for companies your size. A pre-audit risk review now costs a fraction of what an exam defense costs later.
+   2. [ 80/100] Pillar Two / GloBE Global Minimum Tax
+      Signals: Foreign income >$7.6B (above GloBE threshold)
+      Talking point: The GIR filing deadline is June 30 and the data requirements are substantial. Companies that haven't started building their GloBE information systems are already behind.
+   3. [ 80/100] Corporate Alternative Minimum Tax (CAMT)
+      Signals: Net income >$8.6B — clearly in CAMT territory
+      Talking point: If your book income exceeds $1B, you're potentially in CAMT territory. The final rules still aren't out, and companies that wait for clarity are going to have a harder time course-correcting.

@@ -1,0 +1,212 @@
+{
+  "version": "2026-06-08",
+  "source": "Big 4 tax issues research, web sources June 2026",
+  "issues": [
+    {
+      "id": "obbba_r_e",
+      "title": "OBBBA R&E Expensing — Section 174",
+      "short": "R&E Immediate Expensing",
+      "description": "OBBBA permanently restored immediate expensing of domestic R&E costs, retroactive to 2025. Foreign R&E still requires 15-year amortization. Companies that amortized domestic R&E in 2025 may be eligible for amended returns or accounting method changes.",
+      "financial_signals": ["rd_expense", "foreign_rd_ratio"],
+      "scoring_rules": {
+        "rd_expense_gt_100m": 30,
+        "rd_expense_gt_500m": 50,
+        "rd_expense_gt_1b": 70,
+        "has_foreign_rd": 20
+      },
+      "advisor_framing": "Your advisor can accelerate the Section 174 method change analysis and quantify the 2025 retroactive benefit.",
+      "talking_point": "Your R&D spend creates an immediate cash tax recovery opportunity from the 2025 retroactive fix. That analysis needs to happen now, before the filing window closes.",
+      "urgency": "high",
+      "sectors": ["technology", "pharma", "manufacturing", "biotech"]
+    },
+    {
+      "id": "obbba_bonus_depreciation",
+      "title": "OBBBA Bonus Depreciation — Permanent 100%",
+      "short": "Bonus Depreciation",
+      "description": "OBBBA permanently restored 100% bonus depreciation for eligible property placed in service after January 19, 2025. Significant planning opportunity for capital-intensive businesses.",
+      "financial_signals": ["capex", "total_assets", "asset_intensity"],
+      "scoring_rules": {
+        "capex_gt_100m": 25,
+        "capex_gt_500m": 45,
+        "capex_gt_1b": 60,
+        "asset_heavy_industry": 15
+      },
+      "advisor_framing": "Your advisor can model the depreciation acceleration benefit across your asset base and coordinate with the bonus depreciation election timing.",
+      "talking_point": "With permanent 100% bonus depreciation, your capital investment program now has a fundamentally different tax cost basis. That changes your ROI math on projects you may have already approved.",
+      "urgency": "medium",
+      "sectors": ["manufacturing", "utilities", "real_estate", "energy", "telecom"]
+    },
+    {
+      "id": "obbba_163j",
+      "title": "OBBBA 163(j) — EBITDA Business Interest",
+      "short": "Interest Deduction (163j)",
+      "description": "OBBBA restored EBITDA-based (not EBIT-based) business interest deduction limitation under Section 163(j). For heavily leveraged companies or those with large depreciation, this significantly increases deductible interest.",
+      "financial_signals": ["interest_expense", "ebitda", "total_debt", "depreciation_amortization"],
+      "scoring_rules": {
+        "interest_expense_gt_50m": 20,
+        "interest_expense_gt_200m": 45,
+        "high_leverage_ratio": 30,
+        "recent_acquisition": 20
+      },
+      "advisor_framing": "Your advisor can calculate the incremental interest deduction benefit from the EBITDA restoration and identify any prior-year disallowed interest carryforwards to recapture.",
+      "talking_point": "The EBITDA restoration could unlock significant previously disallowed interest deductions, especially if you've been building up a Section 163(j) carryforward.",
+      "urgency": "high",
+      "sectors": ["leveraged_buyout", "real_estate", "utilities", "telecom", "manufacturing"]
+    },
+    {
+      "id": "state_conformity",
+      "title": "State Tax Conformity Gaps",
+      "short": "State Conformity",
+      "description": "Most states have not conformed to OBBBA provisions. Federal vs. state taxable income diverges on bonus depreciation, R&E expensing, and 163(j). Multi-state filers need jurisdiction-by-jurisdiction analysis.",
+      "financial_signals": ["state_count", "multistate_revenue", "workforce_size"],
+      "scoring_rules": {
+        "operates_5plus_states": 20,
+        "operates_15plus_states": 40,
+        "operates_all_states": 55,
+        "large_workforce": 15
+      },
+      "advisor_framing": "Your advisor can map your state footprint against current conformity status and quantify the state-federal mismatch exposure.",
+      "talking_point": "Your federal tax planning just got more complicated by the state layer. Most states haven't conformed to the new bonus depreciation and R&E rules yet, so your state returns could diverge significantly from your federal position.",
+      "urgency": "medium",
+      "sectors": ["retail", "manufacturing", "financial_services", "technology"]
+    },
+    {
+      "id": "pillar_two",
+      "title": "Pillar Two / GloBE Global Minimum Tax",
+      "short": "Pillar Two / GIR",
+      "description": "~140 countries have adopted the 15% global minimum tax. US-parented MNEs can use the OECD side-by-side safe harbor (Jan 2026) but must document eligibility. First GloBE Information Return (GIR) filings due June 30, 2026. ASC 740 deferred tax obligations remain regardless of safe harbor elections.",
+      "financial_signals": ["foreign_revenue", "international_subsidiaries", "effective_tax_rate", "total_revenue"],
+      "scoring_rules": {
+        "foreign_revenue_gt_750m": 60,
+        "foreign_revenue_gt_2b": 80,
+        "low_effective_tax_rate": 25,
+        "many_foreign_subsidiaries": 20
+      },
+      "advisor_framing": "Your advisor can assess safe harbor eligibility, build the GIR data infrastructure, and handle ASC 740 reporting for Pillar Two impacts.",
+      "talking_point": "The GIR filing deadline is June 30 and the data requirements are substantial. Companies that haven't started building their GloBE information systems are already behind.",
+      "urgency": "critical",
+      "sectors": ["technology", "pharma", "manufacturing", "financial_services"]
+    },
+    {
+      "id": "irs_enforcement",
+      "title": "IRS Enforcement — Audit Rate Surge",
+      "short": "IRS Audit Risk",
+      "description": "Large corporations (assets >$250M) face audit rates tripling to 22.6% by 2026. Large partnerships face 10x audit rate increase to 1%. IRS using AI/ML for detection. CAMT, transfer pricing, R&D credits, and executive compensation are primary focus areas.",
+      "financial_signals": ["total_assets", "entity_type", "uncertain_tax_positions", "prior_audit_history"],
+      "scoring_rules": {
+        "assets_gt_250m": 25,
+        "assets_gt_1b": 45,
+        "assets_gt_10b": 65,
+        "has_utp_disclosure": 20,
+        "has_partnership_structure": 25
+      },
+      "advisor_framing": "Your advisor can conduct a pre-audit risk assessment, strengthen documentation on the highest-risk positions, and support IRS examination management.",
+      "talking_point": "The IRS is tripling audit rates for companies your size. A pre-audit risk review now costs a fraction of what an exam defense costs later.",
+      "urgency": "high",
+      "sectors": ["all"]
+    },
+    {
+      "id": "transfer_pricing",
+      "title": "Transfer Pricing + Tariff Convergence",
+      "short": "Transfer Pricing",
+      "description": "Transfer pricing is the most common large-company audit trigger globally. In 2026, the same intercompany prices are now scrutinized by both tax authorities and customs authorities with directly conflicting objectives. APAs are in demand but backlogged.",
+      "financial_signals": ["foreign_revenue", "intercompany_transactions", "import_cogs", "segment_count"],
+      "scoring_rules": {
+        "multinational_operations": 30,
+        "high_intercompany_activity": 35,
+        "import_heavy_cogs": 25,
+        "multi_segment": 15
+      },
+      "advisor_framing": "Your advisor can conduct a transfer pricing policy review that accounts for both tax and customs optimization, and advance an APA application before the backlog grows further.",
+      "talking_point": "The tariff environment just made your transfer pricing documentation twice as important — and twice as conflicted. Tax authorities want high intercompany prices; customs wants low ones. Your policy needs to be defensible to both simultaneously.",
+      "urgency": "high",
+      "sectors": ["manufacturing", "pharma", "technology", "consumer_goods"]
+    },
+    {
+      "id": "tariff_unicap",
+      "title": "Tariff UNICAP Capitalization",
+      "short": "Tariff Tax Impact",
+      "description": "Tariffs paid on imported inventory must be capitalized under IRC §263A UNICAP rules, not immediately expensed. Section 232 duties on pharmaceuticals (100%), steel, aluminum, and copper remain active after IEEPA/Section 122 tariffs were struck down. Potential refunds may be available.",
+      "financial_signals": ["cogs", "import_exposure", "inventory_days", "sector"],
+      "scoring_rules": {
+        "pharma_sector": 50,
+        "metals_sector": 45,
+        "manufacturing_import_heavy": 40,
+        "high_cogs_ratio": 20,
+        "large_inventory_balance": 15
+      },
+      "advisor_framing": "Your advisor can analyze your tariff exposure under the remaining Section 232 duties, identify UNICAP capitalization impact on taxable income, and track the refund opportunity as litigation proceeds.",
+      "talking_point": "The tariffs your company is paying are not just a trade cost — they're creating a tax timing difference under UNICAP rules that affects your quarterly provision. And there may be a refund coming if you're tracking your entries correctly.",
+      "urgency": "high",
+      "sectors": ["pharma", "metals", "manufacturing", "consumer_goods", "automotive"]
+    },
+    {
+      "id": "camt",
+      "title": "Corporate Alternative Minimum Tax (CAMT)",
+      "short": "CAMT ($1B Book Income)",
+      "description": "15% CAMT on adjusted financial statement income (AFSI) applies to corporations with >$1B in average book income. Final regulations still pending; operating on interim guidance (Notice 2026-7). Large gap between book income and taxable income creates material CAMT exposure.",
+      "financial_signals": ["book_income", "net_income", "deferred_tax_balance", "effective_tax_rate"],
+      "scoring_rules": {
+        "book_income_gt_1b": 60,
+        "book_income_gt_5b": 80,
+        "low_effective_tax_rate_with_high_book_income": 40,
+        "large_deferred_tax_asset": 20
+      },
+      "advisor_framing": "Your advisor can model your CAMT exposure against the interim guidance, identify optimization strategies within the AFSI calculation, and monitor final regulation developments.",
+      "talking_point": "If your book income exceeds $1B, you're potentially in CAMT territory. The final rules still aren't out, and companies that wait for clarity are going to have a harder time course-correcting.",
+      "urgency": "high",
+      "sectors": ["large_cap", "financial_services", "technology", "energy"]
+    },
+    {
+      "id": "payroll_compliance",
+      "title": "Payroll — No Tax on Tips & Overtime",
+      "short": "Payroll Compliance",
+      "description": "OBBBA created 'no tax on tips' and 'no tax on overtime' provisions. New W-2 codes mandatory for 2026. Payroll/timekeeping systems must be upgraded. Many states do not have matching exclusions, creating withholding complexity.",
+      "financial_signals": ["employee_count", "sector", "hourly_workforce_ratio"],
+      "scoring_rules": {
+        "hospitality_sector": 55,
+        "retail_sector": 45,
+        "manufacturing_sector": 35,
+        "large_hourly_workforce": 30
+      },
+      "advisor_framing": "Your advisor can assess your payroll system readiness for the new W-2 codes and navigate the federal/state mismatch on tip and overtime exclusions.",
+      "talking_point": "The new no-tax-on-tips rule sounds simple but requires new W-2 tracking codes and system updates before year-end. Companies that treat this as a payroll IT problem will hit it on January 1.",
+      "urgency": "medium",
+      "sectors": ["hospitality", "retail", "food_service", "manufacturing"]
+    },
+    {
+      "id": "rd_credit_documentation",
+      "title": "R&D Tax Credit Documentation Crackdown",
+      "short": "R&D Credit Documentation",
+      "description": "IRS updated the R&D credit form with mandatory new documentation sections effective for tax year 2026. Inadequate documentation leads to disallowance under audit. Affects technology, pharma, and manufacturing companies with R&D credit claims.",
+      "financial_signals": ["rd_expense", "prior_rd_credits", "sector"],
+      "scoring_rules": {
+        "claims_rd_credit": 50,
+        "rd_expense_gt_50m": 20,
+        "rd_expense_gt_200m": 35,
+        "tech_pharma_mfg_sector": 15
+      },
+      "advisor_framing": "Your advisor can review your current R&D credit documentation against the new IRS requirements and build a defensible contemporaneous documentation system.",
+      "talking_point": "The IRS just made the R&D credit documentation requirements substantially more demanding for this year's returns. Companies that have been claiming credits informally are at risk of full disallowance.",
+      "urgency": "high",
+      "sectors": ["technology", "pharma", "manufacturing", "biotech", "aerospace"]
+    },
+    {
+      "id": "transferable_credits",
+      "title": "Transferable Clean Energy Credits",
+      "short": "Transferable Credits",
+      "description": "25% of Fortune 1000 now participate in the transferable clean energy credit market — up 60% from 2024. Credits from IRA (sections 45X, 45Y, 48E) can be sold to offset others' tax liability. Some curtailed under OBBBA but core credit market remains active.",
+      "financial_signals": ["clean_energy_investment", "renewable_assets", "ira_credit_disclosures", "effective_tax_rate"],
+      "scoring_rules": {
+        "significant_clean_energy_investment": 50,
+        "ira_credits_disclosed": 40,
+        "low_tax_liability_high_credits": 35,
+        "renewable_manufacturing": 45
+      },
+      "advisor_framing": "Your advisor can evaluate your credit monetization options — whether to hold, transfer, or buy — and model the cash flow and tax impact across your credit portfolio.",
+      "talking_point": "The transferable credit market has grown 60% in one year. If you're generating clean energy credits you can't fully use, there's a buyer. If you need to offset tax liability, there's a seller. Your advisor structures both sides of these transactions.",
+      "urgency": "medium",
+      "sectors": ["energy", "utilities", "manufacturing", "technology"]
+    }
+  ]
+}
