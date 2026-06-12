@@ -46,6 +46,33 @@ DEMO_COMPANIES = {
         "effective_tax_rate": 0.134,
         "data_source": "Demo data (synthetic — pharma profile)",
     },
+    # Atlas Components Group is the demo-suite client: this profile feeds Act 1, the
+    # tax-impact CAMT analysis covers the same company in Act 2, and the Pillar Two
+    # Data-Gap Copilot runs its GIR readiness pilot in Act 3. Revenue and book income
+    # mirror the tax-impact fixtures ($4.8B revenue, $1.24B book income); the low ETR
+    # reflects the Irish holding / Singapore IP structure that Act 3 digs into.
+    "DEMO-ATLAS": {
+        "ticker": "DEMO-ATLAS",
+        "company_name": "Atlas Components Group, Inc. (Demo)",
+        "cik": "demo",
+        "revenue": 4_800_000_000,
+        "net_income": 1_240_000_000,
+        "rd_expense": 310_000_000,
+        "capex": 540_000_000,
+        "interest_expense": 210_000_000,
+        "total_assets": 4_600_000_000,
+        "total_debt": 2_400_000_000,
+        "depreciation_amortization": 380_000_000,
+        "inventory": 700_000_000,
+        "cogs": 3_100_000_000,
+        "income_tax_expense": 135_000_000,
+        "deferred_tax_assets": 350_000_000,
+        "uncertain_tax_positions": 160_000_000,
+        "foreign_income": 600_000_000,
+        "ebitda": 1_950_000_000,
+        "effective_tax_rate": 0.098,
+        "data_source": "Demo data (synthetic — Atlas Components Group, the demo-suite client)",
+    },
     "DEMO-MFG": {
         "ticker": "DEMO-MFG",
         "company_name": "Titan Manufacturing Inc (Demo)",
@@ -255,6 +282,10 @@ with st.sidebar:
         "Same design rule across all three: deterministic rules decide, "
         "AI drafts narrative, professionals review and sign off."
     )
+    st.caption(
+        "One client threads through the suite: select **DEMO-ATLAS — Atlas Components "
+        "Group** here, then Acts 2 and 3 pick up the same company."
+    )
 
 st.markdown("---")
 
@@ -267,7 +298,11 @@ _real_options = sorted(
     [f"{c['ticker']} — {c['name']}" for c in companies],
     key=lambda s: s.split(" — ", 1)[-1],
 )
-_demo_options = ["DEMO-PHARMA — Acme Pharmaceutical Corp (Demo)", "DEMO-MFG — Titan Manufacturing Inc (Demo)"]
+_demo_options = [
+    "DEMO-ATLAS — Atlas Components Group, Inc. (Demo)",
+    "DEMO-PHARMA — Acme Pharmaceutical Corp (Demo)",
+    "DEMO-MFG — Titan Manufacturing Inc (Demo)",
+]
 ALL_OPTIONS = [""] + _real_options + _demo_options
 
 # --- Input ---
