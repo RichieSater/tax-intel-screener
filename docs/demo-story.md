@@ -1,7 +1,8 @@
 # Big 4 Tax Intelligence Screener — Demo Story
 
 **Demo label:** TAX-INTEL DEMO  
-**Updated:** 2026-06-08
+**Audience:** generic / any Big 4 viewer. (The tailored, named recording script lives outside the repo in `~/dev/_demo-prep/`.)  
+**Updated:** 2026-06-14
 
 ## The One-Sentence Pitch
 
@@ -80,26 +81,32 @@ This demo shows Richie understands the workflow well enough to build it. The con
 - Do not demo on a company with a bad EDGAR data year — use demo companies if needed.
 - Do not linger on the EDGAR fetch — it can be slow. Have DEMO-PHARMA or DEMO-MFG ready.
 
-## Where This Fits: The Three-Demo Arc
+## Where This Fits: Find → Monitor → Deliver
 
-The three demos follow one client's journey through the tax engagement lifecycle:
+The three demos follow the actual shape of a tax practice — win the work, serve the book, deliver the
+engagement — with one client, **Atlas Components Group**, threaded through all three so the story never
+loses its subject.
 
-1. **Find (this app).** A partner screens a target company from public SEC data and walks into the first
-   meeting knowing which 2026 issues are material. Pillar Two and CAMT are two of the twelve issues scored.
-2. **Quantify (`tax-impact`).** The screener flagged CAMT — the Tax Regulation Change Impact Agent models the
-   IRS notice against the client's profile and produces an impact matrix, draft memo, and action list.
-3. **Deliver (`beps-pillar-two-data-gap-copilot`).** The screener flagged Pillar Two — the Data-Gap Copilot
-   takes the signed engagement into execution: source-data intake, gap register, safe-harbour triage,
-   and a gated GIR readiness memo.
+1. **Find (this app).** A partner turns a company's public SEC filings into a specific, ranked opening
+   and wins the work. Atlas gets onto the book this way; CAMT and Pillar Two are two of the twelve issues
+   that screen material for it.
+2. **Monitor (`tax-impact`).** Once a name is on the book, it's monitored. When a regulation changes, the
+   Tax Regulation Change Impact Agent screens the *whole portfolio* against it at once — five companies,
+   same notice, very different exposure — and tells the partner who to call. Atlas is the high-impact name
+   in that portfolio; the other four are the rest of the book, and the point they make is that the same
+   rule lands completely differently depending on each client's facts. That spread is the cross-sell map.
+3. **Deliver (`beps-pillar-two-data-gap-copilot`).** When Atlas's Pillar Two exposure becomes a real
+   engagement, the Data-Gap Copilot does the execution: source-data intake, gap register, safe-harbour
+   triage, and a gated GIR readiness memo.
 
 The connective line to say out loud:
 
-> "Act 1 finds the opportunity from public data. Act 2 quantifies it against the client's numbers.
-> Act 3 delivers it with audit-ready controls. Same design rule throughout: deterministic rules decide,
-> AI drafts the narrative, professionals review and sign off."
+> "Find wins the name from public data. Monitor watches the whole book and tells you who a rule change just
+> exposed. Deliver does the complex filing with audit-grade controls. Same design rule throughout:
+> deterministic rules decide, AI drafts the narrative, professionals review and sign off."
 
 When Pillar Two or CAMT lands in the top issues during this demo, the app shows the suite handoff inline —
-use that moment to bridge to the next demo.
+use that moment to bridge to the next app.
 
 A related fourth prototype, `tax-provision-agent`, applies the same controlled-AI pattern to recurring
 provision close work (the recurring-revenue side of the same story).

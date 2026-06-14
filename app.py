@@ -106,15 +106,15 @@ DEMO_SUITE_HANDOFFS = {
         "safe-harbour triage, and a GIR readiness memo."
     ),
     "camt": (
-        "**Suite handoff →** When CAMT screens material, the next step is the "
-        "**Tax Regulation Change Impact Agent** (companion demo): models the IRS notice against "
-        "the company's profile and drafts an impact memo and action list."
+        "**Suite handoff →** When CAMT screens material, this client joins the book the "
+        "**Tax Regulation Change Impact Agent** (companion demo) monitors: it screens the whole "
+        "portfolio against the IRS notice and drafts an impact memo and action list for each name."
     ),
 }
 
 HANDOFF_NEXT_STEPS = {
     "pillar_two": "Pillar Two screens material — propose a GIR data-readiness assessment (Pillar Two Data-Gap Copilot).",
-    "camt": "CAMT screens material — propose a regulation-change impact analysis of the current IRS notice (Tax Regulation Change Impact Agent).",
+    "camt": "CAMT screens material — add this client to the monitored book and run the current IRS notice against it (Tax Regulation Change Impact Agent).",
 }
 
 
@@ -269,22 +269,24 @@ st.caption(
 )
 
 with st.sidebar:
-    st.markdown("### Demo suite: ticker → delivered engagement")
+    st.markdown("### How the three demos fit together")
     st.markdown(
-        "1. **Find** — this screener ranks which 2026 tax issues are material "
-        "for a target company, from public SEC filings.\n"
-        "2. **Quantify** — the *Tax Regulation Change Impact Agent* models a specific "
-        "rule change (e.g. the CAMT notice) against the client's profile.\n"
-        "3. **Deliver** — the *Pillar Two Data-Gap Copilot* turns the engagement into "
-        "execution: data readiness, gaps, safe harbours, filing memo.\n"
+        "1. **Find** — this screener turns a company's public SEC filings into a "
+        "specific, ranked opening. It's how a new name gets won onto the book.\n"
+        "2. **Monitor** — the *Tax Regulation Change Impact Agent* watches the whole "
+        "book. When a rule changes, it screens every client at once and flags who's "
+        "exposed and where the next conversation is.\n"
+        "3. **Deliver** — the *Pillar Two Data-Gap Copilot* executes a complex filing "
+        "with audit-grade controls: data readiness, gaps, safe harbours, memo.\n"
     )
     st.caption(
         "Same design rule across all three: deterministic rules decide, "
         "AI drafts narrative, professionals review and sign off."
     )
     st.caption(
-        "One client threads through the suite: select **DEMO-ATLAS — Atlas Components "
-        "Group** here, then Acts 2 and 3 pick up the same company."
+        "One client runs through all three. Select **DEMO-ATLAS — Atlas Components "
+        "Group** here; it's the high-impact name in the Monitor portfolio and the "
+        "client whose Pillar Two filing the Deliver app works."
     )
 
 st.markdown("---")
